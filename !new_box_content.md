@@ -1,17 +1,3 @@
----
-Alias: {{title}}
-Date: {{date}}
-Platform: 
-Difficulty:
-Tags:
-Status:
-my_ip: x.x.x.x
-target_ip: x.x.x.x
-ports: x,x,x
-is_ad: yes|no
-dc_ip: x.x.x.x
----
-
 # Resolution summary
 - Text
 - Text
@@ -27,20 +13,8 @@ dc_ip: x.x.x.x
 ---
 
 # Information Gathering
-Scanned all TCP ports:
-```bash
 
-```
-
-Enumerated open TCP ports:
-```bash
-
-```
-
-Enumerated top 200 UDP ports:
-```bash
-
-```
+ <% tp.file.include("[[Templates/port_scan]]") %>
 
 ---
 
