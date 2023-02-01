@@ -1,3 +1,23 @@
+## PreBlocks (collapse me)
+```python {pre}
+def scan_target(target):
+	import nmap
+	nm = nmap.PortScanner()
+	nm.scan(hosts=target, arguments='-sC -sV -o nmap -A -T5')
+	
+	print('----------------------------------------------------')
+	print('Host : %s (%s)' % (target, nm[target].hostname()))
+	print('State : %s' % nm[target].state())
+	for proto in nm[target].all_protocols():
+		print('----------')
+		print('Protocol : %s' % proto)
+	
+		lport = list(nm[target][proto].keys())
+		lport.sort()
+		for port in lport:
+			print('port : %s\tstate : %s' % (port, nm[target][proto][port]['state']))
+```
+
 # Resolution summary
 - Text
 - Text

@@ -16,3 +16,7 @@ for(j in tcpVal) { print j }
 ```shell
 nmap -sC -sV -p`cat <% tp.frontmatter.target_ip %>_ports.txt` <% tp.frontmatter.target_ip %> -oN <% tp.frontmatter.target_ip %>_full.nmap && cat <% tp.frontmatter.target_ip %>_ports.txt
 ```
+
+```python
+scan_target('172.16.10.27')
+```
