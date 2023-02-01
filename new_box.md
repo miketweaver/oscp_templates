@@ -5,7 +5,11 @@ Platform:
 Difficulty:
 Tags:
 Status:
-IP: 
+my_ip: x.x.x.x
+target_ip: x.x.x.x
+ports: x,x,x
+is_ad: yes|no
+dc_ip: x.x.x.x
 ---
 
 # Resolution summary
